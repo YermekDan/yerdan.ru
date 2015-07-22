@@ -1,6 +1,6 @@
 > Как установить мой проект?
 
-1. git clone --git url-- site
+1. git clone https://github.com/YermekDan/yerdan.ru.git site
 
 2. cd site
 
