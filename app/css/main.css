@@ -1,0 +1,285 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: url(../img/bgpattern.png) repeat;
+	font: normal 1em 'fira_sanslight';
+	color: #4a545d;
+}
+
+/* прибитье футера к низу*/
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	min-width: 970px; /* обязательно указываем минимальную ширину примерно на 10 пикселей шире main-content*/
+	height: auto!important;
+	/*overflow: hidden;*/
+}
+.wrapper:after {
+	content: "";
+	height: 80px;
+	display: block;
+}
+.footer{
+	min-width: 970px;
+	height: 80px;
+	margin-top: -80px;	
+}
+/* прибитье футера к низу - конец*/
+
+/* Шапка */
+.main-header {
+  max-width: 1200px;
+  min-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.header {
+  height: 119px;
+  background: #eff3f7 url('../img/gradient-line.png') bottom center no-repeat;
+  position: relative;
+  margin-bottom: 39px;
+}
+.header .header-logo{
+	position: absolute;
+	top: 39px;
+	left: 0;
+}
+.header .header-logo-text{
+	position:absolute;
+	left:-9999px
+}
+.header .socials{
+	position: absolute;
+	right: 0;
+	top: 36px;	
+}
+/* Шапка - конец */
+
+
+
+/* Блок социальных ссылок */
+.socials{
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+}
+.socials .socials-list {
+  	list-style: none;
+  	display: inline-block;
+  	height: 49px;
+  	width: 47px;
+ 	margin-left: 19px;
+  /* Отступ у таких элементов всегда слева */
+}
+.socials .socials-list:first-child {
+  	margin-left: 0;
+  /* А у первого элемента обнуляем отступ */
+}
+.socials .socials-link {
+	display: block;
+  	height: 100%;
+  	width: 100%;
+  	text-indent: -9999px;
+ 	background: url(../img/socials.png) no-repeat;
+}
+.socials .socials-link.vk {background-position: -2px -3px; }
+.socials .socials-link.tw {background-position: -71px -3px; }
+.socials .socials-link.fb {background-position: -140px -3px; }
+.socials .socials-link.gt {background-position: -209px -3px; }
+.socials .socials-link:hover {background-position-y: -65px; }
+/* Блок социальных ссылок - конец */
+
+/* Сайдбар */
+.sidebar {
+	width: 250px;
+	float: left;
+}
+
+
+/* Навигация */
+.menu{
+	overflow: hidden;
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.menu .menu-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu .menu-item {
+	border-top: 2px solid #3ba8c0;
+	margin: 0 11px;
+}
+.menu .menu-item:first-child{
+	border-top: none;
+}
+/* Навигация - текущий пункт меню*/
+.menu .menu-item.current{	
+	background: #3ba8c0;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 11px;
+	margin-bottom: -2px; /* Хак */
+}
+
+.menu .menu-item.current .menu-link{
+	color: #f9fafb;
+	font-size: 22px;
+}
+/* Навигация - текущий пункт меню - конец */
+.menu .menu-link {
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #959aa8;
+	margin-left: 16px;
+	padding: 20px 0px;
+}
+.menu .menu-link:hover{
+	color: #3ba8c0;
+} 
+/* Навигация - конец */
+
+/* Контакты - начало */
+.contacts {
+	border: 0px solid #3ba8c0;
+    border-radius: 8px 8px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.contacts-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.mail, .phone, .skype {
+	padding: 6px 0 6px 83px;
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+}
+
+.contacts-title {
+	font-size: 21px !important;
+	padding: 4px 0 3px 22px;
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	background-color: #3ba8c0;
+	color: #ffffff;
+}
+
+.mail {
+	background-color: #41b9d4;
+	background-image: url(../img/e-mail.png);
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+}
+
+.phone {
+	background-color: #48cbe8;
+	background-image: url(../img/tel.png);
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+}
+
+.skype {
+	background-color: #51daf8;
+	background-image: url(../img/skype.png);
+	background-repeat: no-repeat;
+	background-position: 41px 10px;
+}
+
+.contacts a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contacts a:hover {
+	display: block;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/* Контакты - конец*/
+
+/* Главная область */
+.variable-content{
+	width: 650px;
+	float: right;
+}
+
+/* Футер */
+.footer{	
+	background: #eff3f7 url(../img/gradient-line.png) top center no-repeat;
+	font-family: 'fira_sanslight';
+  	color: #4a545d;
+}
+.footer .main-footer {
+	padding-top: 23px;
+	position: relative;  
+}
+.footer .copyright{
+	margin: 0 180px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 13px;
+}
+/* Логин */
+.footer .login{
+	position: absolute;
+	top: 26px;
+	left: 20px;	
+}
+.login .login-inner {
+	display: block;
+	height: 40px;
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+	line-height: 2.2;
+	color: #4a545d;
+	text-decoration: none;
+	background: url(../img/login-close.png) no-repeat;
+	padding-left: 24px;
+}
+.login .login-inner:hover{
+	text-decoration: underline;
+	background: url(../img/login-open.png) no-repeat;
+}
+/* Логин - конец */
+/* Футер - конец */
+
+
+/* общие классы */
+.container, .main-footer {
+	width: 960px;
+	margin: 0 auto;
+}
+.text-center{
+	text-align: center;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+/* clearfix */
+.container:before, .main-footer:before, .clearfix:before,
+.container:after, .main-footer:after, .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.container:after, .main-footer:after, .clearfix:after {
+  clear: both;	
+}
+/* clearfix - конец */
+/* общие классы - конец */
+
