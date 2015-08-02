@@ -1,0 +1,84 @@
+/* Общие стили для всех секций */
+.aboutbox{
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.aboutbox .aboutbox-header{
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 23px 0;
+	padding: 13px 23px;
+	display: inline-block;
+}
+.aboutbox-body{
+	padding-bottom: 40px;	
+}
+/* Общие стили для всех секций - конец */
+
+.site-wrap{
+	margin: 0 20px 0 20px; 
+}
+
+.site-wrap .site-list{
+	margin-left: -25px; 
+}
+
+.site-list .site{
+	
+	width: 183px;
+	margin: 0 0 34px 25px;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.site-list .site-last{
+	margin: 0 0 0 25px;
+}
+
+.site-img{
+	width: 179px;
+	height: 125px;
+	border: 2px solid #3ba8c0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.site .site-text{
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	color: #3ba8c0;
+	text-decoration: none;
+}
+
+
+.site .site-description{
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	color: #4a545d;
+	margin-top: 7px;
+}
+
+.site-list .site-add{
+	width: 181px;
+	height: 127px;
+	border: 1px dashed #3ba8c0;
+	background-image: url(../img/my-work/project-add-icon.png);
+	background-repeat: no-repeat;
+	background-position: 77px 34px;	
+	border-radius: 5px;
+	background-color: #edf8fc;
+}
+
+.site-add .site-add-text{
+	margin-top: 73px;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	color: #3ba8c0;
+
+}

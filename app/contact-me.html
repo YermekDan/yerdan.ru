@@ -18,7 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css">
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/my-work.css">
+		<link rel="stylesheet" type="text/css" href="css/contact-me.css">
 		<!-- modernizer -->
 		<script src="bower/modernizer/modernizr.js"></script>
 	</head>
@@ -56,8 +56,8 @@
 		        		  <nav class="menu">
 				              <ul class="menu-list">
 				                <li class="menu-item"><a href="/" class="menu-link">Обо мне</a></li>
-				                <li class="menu-item current"><a href="/my-work.html" class="menu-link">Мои работы</a></li>
-				                <li class="menu-item"><a href="/contact-me.html" class="menu-link">Связаться со мной</a></li>
+				                <li class="menu-item"><a href="/my-work.html" class="menu-link">Мои работы</a></li>
+				                <li class="menu-item current"><a href="/contact-me.html" class="menu-link">Связаться со мной</a></li>
 				              </ul>
 				          </nav>
 				          <address class="contacts">
@@ -71,42 +71,39 @@
 		        	</aside>
 		        	<!-- Изменяемый контент -->
         			<div class="variable-content">
-        				<section class="aboutbox">
-	        			  <h2 class="aboutbox-header">Мои работы</h2>
-			              <div class="aboutbox-body clearfix">
-			              	<div class="site-wrap">
-				                <div class="site-list">
-				                	<li class="site">
-				                		<div class="site-img"><img src="img/my-work/site1.png" alt="site1"></div>
-				                		<a class="site-text" href="#">www.site.ru</a>
-				                		<div class="site-description">Информация о проекте 1 превью 2 строки...</div>
-				                	</li>
-				                	<li class="site">
-				                		<div class="site-img"><img src="img/my-work/site2.png" alt="site1"></div>
-				                		<a class="site-text" href="#">www.site.ru</a>
-				                		<div class="site-description">Информация о проекте 2 превью 2 строки...</div>
-				                	</li>
-				                	<li class="site">
-				                		<div class="site-img"><img src="img/my-work/site3.png" alt="site1"></div>
-				                		<a class="site-text" href="#">www.site.ru</a>
-				                		<div class="site-description">Информация о проекте 3 превью 2 строки...</div>
-				                	</li>
-				                	<li class="site site-last">
-				                		<div class="site-img"><img src="img/my-work/site4.png" alt="site1"></div>
-				                		<a class="site-text" href="#">www.site.ru</a>
-				                		<div class="site-description">Информация о проекте 4 превью 2 строки...</div>
-				                	</li>
-				                	<li class="site site-last">
-				                		<div class="site-add">
-				                			<div class="site-add-text">Добавить проект</div>
-				                		</div>
-				                	</li>
-				                </div>
-				            </div>
-			              </div>
-	        			</section>
-		        		
-					</div>
+        				<section class="contact-wrapper">
+        					<h2 class="contact-wp-header">У вас интересный проект? Напишите мне</h2>
+        					<div class="contact-wrap">
+        						<div class="contact-title clearfix">
+        							<div class="contact-title-name">
+		        						<p class="contact-text">Имя</p>
+		        						<input name="name" type="text" class="contact-title-view" value="Как к Вам обращаться">
+		        					</div>
+		        					<div class="contact-title-mail">
+		        						<p class="contact-text">E-mail</p>
+		        						<input name="mail" type="text" class="contact-title-view" value="Куда мне писать">
+		        					</div>
+	        					</div>
+	        					<div class="contact-message">
+		        					<p class="contact-text">Сообщение</p>
+		        					<input name="message" type="text" class="contact-message-view" value="Кратко в чем суть">
+	        					</div>
+	        					<div class="contact-code">
+		        					<p class="contact-code-text">Введите код, указанный на картинке</p>
+		        					<div class="contact-code-blocks clearfix">
+		        						<div class="contact-code-build"></div>
+		        						<div class="contact-code-view-carcas">
+		        							<input name="code" type="text" class="contact-code-view" value="Введите код">
+		        						</div>
+		        					</div>
+	        					</div>
+	        					<div class="contact-send clearfix">
+		        					<input name="send" type="button" class="contact-send-view" value="Отправить">
+		        					<input name="clear" type="button" class="contact-clear-view" value="Очистить">
+		        				</div>
+        					</div>
+        				</section>
+		        	</div>
 				</div>
 			</div>
 		</div>

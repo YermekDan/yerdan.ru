@@ -1,0 +1,138 @@
+/* Общие стили для всех секций */
+.contact-wrapper{
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	width: 650px;
+	overflow: hidden;
+}
+.contact-wrapper .contact-wp-header{
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #fff;
+	border-bottom: 17px #67dffa solid;
+	margin: 0 0 43px 0;
+	padding: 44px 23px;
+	display: inline-block;
+	background-color: #48cbe8;
+	width: 604px;
+	text-align: center;
+}
+
+/* Общие стили для всех секций - конец */
+
+.contact-wrap{
+	width: 404px;
+	margin: 0 auto;
+	padding-bottom: 200px;
+}
+
+.contact-title{
+	margin-bottom: 13px;
+}
+
+.contact-title .contact-title-name {
+	width: 193px;
+	height: 72px;
+	float: left;
+}
+
+.contact-title .contact-title-mail {
+	width: 193px;
+	height: 72px;
+	float: right;
+}
+
+.contact-text{
+	margin: 0;
+	font-family: 'fira_sanslight';
+	font-size: 19px;
+	color: #959aa8;
+}
+
+.contact-title-view{
+	width: 191px;
+	height: 39px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-size: 13px;
+	text-indent: 9px;
+}
+
+.contact-message-view{
+	width: 402px;
+	height: 182px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-size: 13px;
+	text-indent: 9px;
+	margin-bottom: 15px;
+}
+
+.contact-code-text{
+	margin: 0;
+	font-family: 'fira_sanslight';
+	font-size: 17px;
+	color: #959aa8;
+}
+
+.contact-code{
+	margin-bottom: 21px;
+}
+
+.contact-code-build{
+	width: 191px;
+	height: 77px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-size: 13px;
+	text-indent: 9px;
+	float: left;
+	background-color: #fff;
+}
+
+.contact-code-view{
+	width: 191px;
+	height: 39px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-size: 13px;
+	text-indent: 9px;
+	margin-top: 18px;
+}
+
+.contact-code-view-carcas{
+	width: 193px;
+	height: 79px;
+	float: right;
+
+}
+
+.contact-send-view{
+	float: left;
+	width: 139px;
+	height: 35px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: #fff;
+	background-color: #48cbe8;
+	border-radius: 4px;
+	border: none;
+}
+
+.contact-clear-view{
+	float: right;
+	width: 125px;
+	height: 35px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: #fff;
+	background-color: #849db5;
+	border-radius: 4px;
+	border: none;
+}
