@@ -18,6 +18,11 @@
 		<link rel="stylesheet" type="text/css" href="bower/normalize.css/normalize.css">
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/about-me.css">
+		<link rel="stylesheet" type="text/css" href="css/my-work.css">
+		<link rel="stylesheet" type="text/css" href="css/modul.css">
+		<link rel="stylesheet" type="text/css" href="css/form-mywork.css">
+		<link rel="stylesheet" type="text/css" href="css/contact-me.css">
 		<link rel="stylesheet" type="text/css" href="css/login.css">
 		<!-- modernizer -->
 		<script src="bower/modernizer/modernizr.js"></script>
@@ -28,18 +33,27 @@
 		<![endif]-->
 		<div class="wrapper">
 			<div class="main-content">
-				<section class="login-page">
-					<div class="login-wrap">
-						<h2 class="login-header">Авторизуйтесь</h2>
-						<div class="login-enter">
-							<p class="login-text">Логин</p>
-							<input class="login-input" name="login-name" type="text" value="Введите логин">
-							<p class="login-text">Пароль</p>
-							<input class="login-input login-input-last" name="login-password" type="text" value="Введите пароль">
-							<input class="login-button" name="login-button" type="button" value="Войти">
-						</div>
-					</div>
-				</section>
+				<div class="login-container">
+		          <div class="modal-wrapper login-wrapper">
+		            <div class="modal-header">
+		              <h2 class="modal-title">Авторизуйтесь</h2></div>
+		            <div class="modal-body">
+		              <form id="login" role="form" class="form">
+		                <div class="server-mes error-mes"></div>
+		                <div class="server-mes success-mes"></div>
+		                <div class="form-group">
+		                  <label for="login" class="label">Логин</label>
+		                  <input id="name" type="text" name="login" placeholder="Введите логин" qtip-content="Вы не ввели логин" class="input">
+		                </div>
+		                <div class="form-group">
+		                  <label for="password" class="label">Пароль</label>
+		                  <input id="password" type="password" name="password" placeholder="Введите пароль" qtip-content="Вы не ввели пароль" class="input">
+		                </div>
+		                <button type="submit" class="btn">Войти</button>
+		              </form>
+		            </div>
+		          </div>
+		        </div>
 			</div>
 		</div>
 		<footer class="footer">

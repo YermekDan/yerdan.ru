@@ -35,6 +35,7 @@
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
+	position: relative;
 }
 
 .site-list .site-last{
@@ -64,6 +65,42 @@
 	margin-top: 7px;
 }
 
+/* Начало - Прозрачность и синий фон при наведении курсора */
+.site:hover .site-img-image{
+	-moz-opacity: 0.20;
+	opacity:.20;
+	filter: alpha(opacity=20);
+}
+.site:hover .site-img{
+	background-color: #016ca4;
+}
+/* Конец - Прозрачность и синий фон при наведении курсора */
+
+.site .zoom-img{
+	position:absolute;
+	width: 100%;
+	top: 55px;
+	text-align: center;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+.site .zoom-web {
+	font-family: 'fira_sansbook';
+	font-size: 12px;
+	border: solid 3px #eff3f7;
+	color: #eff3f7;
+	text-decoration: none;
+	border-radius: 5px;	
+	padding: 0 4px;
+}
+/* Появление ссылки на сайт */
+.site:hover .zoom-img {	
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
 .site-list .site-add{
 	width: 181px;
 	height: 127px;
@@ -73,6 +110,11 @@
 	background-position: 77px 34px;	
 	border-radius: 5px;
 	background-color: #edf8fc;
+	display: block;
+	width: 181px;
+	height: 127px;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .site-add .site-add-text{
@@ -80,5 +122,9 @@
 	font-family: 'fira_sanslight';
 	font-size: 13px;
 	color: #3ba8c0;
+	
+}
 
+#site-new-popup{
+	display: none;
 }

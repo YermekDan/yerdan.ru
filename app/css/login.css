@@ -1,75 +1,55 @@
-/* Общие стили для всех секций */
-.login-wrap .login-header{
-	font-family: 'fira_sansbook';
+.login-container{
+	position: absolute;
+	top: 0;
+	bottom: 80px;
+	right: 0;
+	left: 0;
+}
+.modal-wrapper.login-wrapper{
+	width: 590px;
+	height: 484px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 80px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	background: #eff3f7;
+	box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
+	border-radius: 5px;
+}
+.login-wrapper .input{
+	font-size: 17px;
+	padding: 17px 12px;
+	height: 60px;	
+}
+.login-wrapper .btn {
+	font-size: 31px;
+	height: 53px;
+	margin-top: 19px;
+	padding: 0 70px;
+}
+.login-wrapper .label{
+	font-size: 35px;
+}
+.login-wrapper .modal-header{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: #48cbe8;
+	border-bottom: 15px solid #67dffa;
+	border-radius: 5px 5px 0 0;
+}
+.login-wrapper .modal-body{
+	padding: 16px 82px;
+}
+.login-wrapper .modal-title{
 	font-size: 40px;
+	color: #fbfcfd;
+	font-family: 'fira_sansregular';
 	font-weight: normal;
-	color: #fff;
-	border-bottom: 17px #67dffa solid;
-	margin: 0 0 18px 0;
-	padding: 14px 23px;
-	display: inline-block;
-	background-color: #48cbe8;
-	width: 545px;
-	text-align: center;
-}
-
-/* Общие стили для всех секций - конец */
-
-.login-page{
-	width: 591px;
-	margin: 20px auto;
-}
-
-.login-wrap{
-	width: 591px;
-	height: 490px;
-	background-color: #eff3f7;
-	border-radius: 4px;
-	overflow: hidden;
-	-webkit-box-shadow: 0px 5px 10px 1px rgba(190,192,190,1);
-	-moz-box-shadow: 0px 5px 10px 1px rgba(190,192,190,1);
-	box-shadow: 0px 5px 10px 1px rgba(190,192,190,1);
-}
-
-.login-wrap .login-enter{
-	width: 425px;
-	margin: 0 auto;
-	text-align: center;
-	
-}
-
-.login-enter .login-text{
-	font-family: 'fira_sanslight';
-	font-size: 36px;
-	color: #959aa8;
 	margin: 0;
 }
-
-.login-enter .login-input{
-	width: 423px;
-	height: 63px;
-	background-color: #fdd5d2;
-	font-family: 'fira_sanslight';
-	font-size: 17px;
-	color: #82b2c2;
-	text-indent: 20px;
-	border: 1px solid #82b2c2;
-	border-radius: 4px;
-	margin-bottom: 13px;
-}
-
-.login-enter .login-input-last{
-	margin-bottom: 34px;
-}
-
-.login-enter .login-button{
-	width: 226px;
-	height: 54px;
-	font-family: 'fira_sansbook';
-	font-size: 36px;
-	color: #fff;
-	background-color: #48cbe8;
-	border: none;
-	border-radius: 10px;
-	border-bottom: 4px solid #3ba8c0;
+.login-wrapper .form-group {
+	margin-bottom: 14px;
 }

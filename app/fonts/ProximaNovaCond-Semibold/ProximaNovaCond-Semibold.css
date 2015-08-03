@@ -1,8 +1,8 @@
-
 @font-face {
-  font-family: 'ProximaNovaCond-Semibold';
-  src: url('ProximaNovaCond-Semibold.eot?#iefix') format('embedded-opentype'),  url('ProximaNovaCond-Semibold.otf')  format('opentype'),
-	     url('ProximaNovaCond-Semibold.woff') format('woff'), url('ProximaNovaCond-Semibold.ttf')  format('truetype'), url('ProximaNovaCond-Semibold.svg#ProximaNovaCond-Semibold') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'ProximaNovaCondensedSemibold';
+    src: url('proximanovacond-semibold.eot');
+    src: url('proximanovacond-semibold.eot') format('embedded-opentype'),
+         url('proximanovacond-semibold.woff') format('woff'),
+         url('proximanovacond-semibold.ttf') format('truetype'),
+         url('proximanovacond-semibold.svg#ProximaNovaCondensedSemibold') format('svg');
 }
