@@ -8,8 +8,7 @@ var myModule = (function () {
 	// Прослушивает события 
 	var _setUpListners = function () {
 				$('#site-new-add').on('click', _showModal); // открыть модальное окно			
-				$('#project-add-new').on('submit', _addProject); // добавление проекта	
-				
+				$('#project-add-new').on('submit', _addProject); // добавление проекта		
 			};
 
   // Работает с модальным окном
@@ -25,14 +24,13 @@ var myModule = (function () {
 	        transition: 'slideDown',
 	        onClose: function () {
 	        	form.find('.server-mes').text('').hide();
+	        	form.trigger("reset");
 	        }
 				});
 				$(".close-button").click(function(){
                 divPopup.close();
             });
 			};
-
-// Закрытие модального окна
 
   // Добавляет проект
 	var _addProject = function (e) {
@@ -41,24 +39,26 @@ var myModule = (function () {
 
 				// объявляем переменные
 				var form = $(this),
-						url = 'add-projects.php',
-						myServerGiveMeAnAnswer = _ajaxForm(form, url);	
-				
-				myServerGiveMeAnAnswer.done(function(ans) {
-
-					var successBox = form.find('.success-mes'),
-							errorBox = form.find('.error-mes');
-
-					if(ans.status === 'OK'){						
-						errorBox.hide();
-						successBox.text(ans.text).show();						
-					}else{
-						successBox.hide();
-						errorBox.text(ans.text).show();
-					}
+						url = 'add_project.php',
+						defObj = _ajaxForm(form, url);	
 					
-				})
-			};
+					// проверяем, а был ли запрос на сервер?
+					if(defObj){						
+						defObj.done(function(ans) {
+
+							var successBox = form.find('.success-mes'),
+									errorBox = form.find('.error-mes');
+
+							if(ans.status === 'OK'){						
+								errorBox.hide();
+								successBox.text(ans.text).show();						
+							}else{
+								successBox.hide();
+								errorBox.text(ans.text).show();
+							}		
+						});
+					}				
+	};
 
   // Универсальная функция
   // Для её работы используются
@@ -68,7 +68,8 @@ var myModule = (function () {
   // 2. проверяет форму
   // 3. делает запрос на сервер и возвращает ответ с сервера
 	var _ajaxForm = function (form, url) {
-			// if(!valid) return false;
+			
+			if (!validation.validateForm(form)) return false;
 				
 				data = form.serialize();
 
